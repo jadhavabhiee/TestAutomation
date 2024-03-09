@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestEdge(failed)">
+    <parameter name="BrowserName" value="Edge"/>
+    <classes>
+      <class name="TESTINGEXECUTION.Login_Script">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="TestMothodExecution"/>
+          <include name="FBLogin"/>
+          <include name="CloseBrowser"/>
+          <include name="OpenApp"/>
+        </methods>
+      </class> <!-- TESTINGEXECUTION.Login_Script -->
+      <class name="TESTINGEXECUTION.CreateAccount">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="Create"/>
+          <include name="TestMothodExecution"/>
+          <include name="CloseBrowser"/>
+          <include name="OpenApp"/>
+        </methods>
+      </class> <!-- TESTINGEXECUTION.CreateAccount -->
+    </classes>
+  </test> <!-- TestEdge(failed) -->
+</suite> <!-- Failed suite [Suite] -->
